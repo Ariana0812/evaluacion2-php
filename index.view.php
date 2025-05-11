@@ -31,9 +31,9 @@
       <td><?php echo $usuario['nombre']; ?></td>
       <td><?php echo $usuario['email']; ?></td>
       <td>
-        <!-- Estos botones no son funcionales aún -->
-        <a href="#">Editar</a> 
-        <a href="#">Eliminar</a>
+        
+        <a href="editar.php?editar=<?php echo $usuario['id']; ?>">Editar</a>
+        <a href="index.php?eliminar=<?php echo $usuario['id']; ?>">Eliminar</a>
       </td>
     </tr>
     <?php endforeach; ?>
